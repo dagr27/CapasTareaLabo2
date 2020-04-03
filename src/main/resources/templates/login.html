@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Agregar Usuario:</h1>
+    <form action="#" th:action="@{/login}" th:object="${usuario}" method="post">
+    	<input placeholder="Usuario" type="text" th:field="*{username}" required>
+    	<br>
+    	<input placeholder="Contraseña" type="password" th:field="*{password}" required>
+    	<br>
+    	<input type="submit" value="Iniciar Sesion"><input type="reset" value="Borrar">
+    </form>
+</body>
+</html>
